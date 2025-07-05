@@ -46,7 +46,7 @@ torso = [
 arms = [
     Armour("Old Ragged Gloves", physical=16, fire=8, bleed=9, poison=9, plague=37),
     Armour("Black Gloves", physical=15, fire=10, bleed=9, poison=37, plague=0),
-    Armour("Imperial Spy Globes", physical=15, fire=14, bleed=14, poison=32, plague=0),
+    Armour("Imperial Spy Gloves", physical=15, fire=14, bleed=14, poison=32, plague=0),
 ]
 legs = [
     Armour("Old Ragged Boots", physical=16, fire=8, bleed=9, poison=9, plague=37),
@@ -157,7 +157,7 @@ def get_geometric_mean(
     )
 
     # Final score of 50% total, 50% weighted_score
-    return (0.5 * norm_total + 0.5 * weighted_score) * 100
+    return 0.5 * norm_total + 0.5 * weighted_score
 
 
 def write_to_csv(armours: list[ArmourSet], path: str) -> None:
